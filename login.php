@@ -19,3 +19,14 @@ $erro = "";
         $erro = "Usuário ou senha inválidos!";
     }
 ?>
+
+<form method="POST" action="" >
+    <h2>Login</h2>
+    <label>Usuário:</label>
+    <input type="text" name="usuario" required>
+
+    <label>Senha:</label>
+    <input type="text" name="senha" required>
+
+    <button type="submit">Entrar</button>
+</form>
