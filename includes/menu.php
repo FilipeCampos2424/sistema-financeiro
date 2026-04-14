@@ -3,7 +3,7 @@ $perfil = $_SESSION["perfil"];
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
 <div class="container">
-<p class="">Sistema Financeiro</p>
+<a class= "titulo">Sistema Financeiro</a>
 <ul class="navbar-nav ms-auto">
 <li class="nav-item">
 <a class="nav-link" href="dashboard.php">Dashboard</a>
