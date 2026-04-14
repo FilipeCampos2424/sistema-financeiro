@@ -1,6 +1,7 @@
 <?php
 include "config/config.php";
 include "data/dados.php";
+include "includes/header.php";
 
 $erro = "";
 
