@@ -2,10 +2,11 @@
 session_start();
 include "../../includes/header.php";
 include "../../includes/menu.php";
-include "../../includes/footer.php";
 include "../../data/dados.php";
 ?>
 
+<h2>Lista de Usuários</h2>
+<br>
 <table class="table table-bordered table-striped">
 
 <thead class="table-dark">
@@ -26,3 +27,5 @@ include "../../data/dados.php";
         <?php endforeach; ?>
 </tbody>
 </table>
+<br>
+<?php include "../../includes/footer.php";  ?>

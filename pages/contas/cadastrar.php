@@ -2,9 +2,10 @@
 session_start();
 include "../../includes/header.php";
 include "../../includes/menu.php";
-include "../../includes/footer.php";
 ?>
 
+<h2>Cadastrar uma conta</h2>
+<br>
 <form>
 <div class="mb-3">
 <label class="form-label">Descrição</label>
@@ -19,3 +20,5 @@ include "../../includes/footer.php";
 </div>
 <button class="btn btn-success">Cadastrar</button>
 </form>
+
+<?php include "../../includes/footer.php"; ?>

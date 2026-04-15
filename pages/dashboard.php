@@ -2,7 +2,6 @@
 session_start();
 include "../includes/header.php";
 include "../includes/menu.php";
-include "../includes/footer.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,6 +24,14 @@ include "../includes/footer.php";
 <p class="card-text">Dívida de Davi Neris - R$ 200,00</p>
 </div>
 </div>
+<br>
+<div class="card text-bg-danger">
+<div class="card-body">
+<h5 class="card-title">Contas que você deve</h5>
+<p class="card-text">Conta de Luz - R$ 200,00</p>
+<p class="card-text">IPTU - R$ 322,00</p>
+</div>
+</div>
     <?php
     elseif ($_SESSION["perfil"] == "empresa"): ?>
     <P>Área da Empresa</p>
@@ -35,6 +42,25 @@ include "../includes/footer.php";
 <p class="card-text">Vendas acumuladas do mês - R$ 4500,00</p>
 </div>
 </div>
+<br>
+<div class="card text-bg-danger">
+<div class="card-body">
+<h5 class="card-title">Contas que você deve</h5>
+<p class="card-text">Conta de Água - R$ 950,00</p>
+<p class="card-text">Conta de Energia - R$ 560,00</p>
+</div>
+</div>
+<?php
+    elseif ($_SESSION["perfil"] == "financeiro"): ?>
+    <P>Área Financeira</p>
+    <br><br><br><br><br><br>
+
+<?php
+    elseif ($_SESSION["perfil"] == "proprietario"): ?>
+    <P>Área do administrador</p>
+    <br><br><br><br><br><br>
     <?php endif; ?>
+
+    <?php include "../includes/footer.php";  ?>
 </body>
 </html>

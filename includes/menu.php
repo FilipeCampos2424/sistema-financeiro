@@ -31,7 +31,7 @@ $perfil = $_SESSION["perfil"];
 <?php } ?>
 <?php if ($perfil == "financeiro") { ?>
 <li class="nav-item">
-<a class="nav-link" href="/sistema-financeiro/pages/contas/listar.php">Relatórios</a>
+<a class="nav-link" href="/sistema-financeiro/pages/users/relatorio.php">Relatórios</a>
 </li>
 <?php } ?>
 <li class="nav-item">

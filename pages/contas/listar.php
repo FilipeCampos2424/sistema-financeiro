@@ -2,10 +2,11 @@
 session_start();
 include "../../includes/header.php";
 include "../../includes/menu.php";
-include "../../includes/footer.php";
 include "../../data/dados.php";
 ?>
 
+<h2>Listagem de Contas</h2>
+<br>
 <table class="table table-bordered table-striped">
 
 <thead class="table-dark">
@@ -34,3 +35,5 @@ include "../../data/dados.php";
         <?php endif; endforeach; ?>
 </tbody>
 </table>
+<br><br><br><br><br>
+<?php include "../../includes/footer.php"; ?>

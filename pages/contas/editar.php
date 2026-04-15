@@ -2,5 +2,6 @@
 session_start();
 include "../../includes/header.php";
 include "../../includes/menu.php";
-include "../../includes/footer.php";
 ?>
+
+<?php include "../includes/footer.php";  ?>
