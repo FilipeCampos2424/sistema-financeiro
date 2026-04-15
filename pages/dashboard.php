@@ -18,9 +18,23 @@ include "../includes/footer.php";
     <?php  
     if ($_SESSION["perfil"] == "cliente"): ?>
     <p>Área do Cliente</p>
+    <div class="card text-bg-success">
+<div class="card-body">
+<h5 class="card-title">Contas a Receber</h5>
+<p class="card-text">Pagamento Salário - R$ 1.610,00</p>
+<p class="card-text">Dívida de Davi Neris - R$ 200,00</p>
+</div>
+</div>
     <?php
     elseif ($_SESSION["perfil"] == "empresa"): ?>
     <P>Área da Empresa</p>
+        <div class="card text-bg-success">
+<div class="card-body">
+<h5 class="card-title">Contas a Receber</h5>
+<p class="card-text">Patrocinador - R$ 3.270,00</p>
+<p class="card-text">Vendas acumuladas do mês - R$ 4500,00</p>
+</div>
+</div>
     <?php endif; ?>
 </body>
 </html>

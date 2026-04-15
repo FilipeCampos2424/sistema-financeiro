@@ -12,10 +12,10 @@ include "../../includes/footer.php";
 </div>
 <div class="mb-3">
 <label class="form-label">Valor</label>
-<input type="number" class="form-control">
+<input type="text" class="form-control">
 </div>
 <label class="form-label">Tipo</label>
-<input type="number" class="form-control">
+<input type="text" class="form-control">
 </div>
 <button class="btn btn-success">Cadastrar</button>
 </form>

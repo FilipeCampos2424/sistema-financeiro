@@ -26,7 +26,7 @@ $perfil = $_SESSION["perfil"];
 <a class="nav-link" href="contas/listar.php">Todas as Contas</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="../data/dados.php">Usuários</a>
+<a class="nav-link" href="users/listar.php">Usuários</a>
 </li>
 <?php } ?>
 <?php if ($perfil == "financeiro") { ?>

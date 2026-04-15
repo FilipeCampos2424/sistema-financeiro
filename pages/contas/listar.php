@@ -12,7 +12,9 @@ include "../../data/dados.php";
 <tr>
 <th>Descrição</th>
 <th>Valor</th>
-<th>Tipo</th>
+<?php if ($perfil == 'proprietario'): ?>
+    <th>Tipo</th>
+    <?php endif; ?>
 </tr>
 </thead>
 <tbody>
@@ -20,6 +22,11 @@ include "../../data/dados.php";
         
         if ($conta['tipo'] === $perfil): ?>
         <tr>
+            <td><?php echo $conta['descricao']; ?></td>
+            <td><?php echo $conta['valor']; ?></td>
+        </tr>
+        <?php elseif ($perfil == 'proprietario'): ?>
+                    <tr>
             <td><?php echo $conta['descricao']; ?></td>
             <td><?php echo $conta['valor']; ?></td>
             <td><?php echo $conta['tipo']; ?></td>
