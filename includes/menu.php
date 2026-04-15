@@ -6,36 +6,36 @@ $perfil = $_SESSION["perfil"];
 <a class= "titulo">Sistema Financeiro</a>
 <ul class="navbar-nav ms-auto">
 <li class="nav-item">
-<a class="nav-link" href="dashboard.php">Dashboard</a>
+<a class="nav-link" href="/sistema-financeiro/pages/dashboard.php">Dashboard</a>
 </li>
 <?php if ($perfil == "cliente") { ?>
 <li class="nav-item">
-<a class="nav-link" href="contas/listar.php">Minhas Contas</a>
+<a class="nav-link" href="/sistema-financeiro/pages/contas/listar.php">Minhas Contas</a>
 </li>
 <?php } ?>
 <?php if ($perfil == "empresa") { ?>
 <li class="nav-item">
-<a class="nav-link" href="contas/listar.php">Contas da Empresa</a>
+<a class="nav-link" href="/sistema-financeiro/pages/contas/listar.php">Contas da Empresa</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="contas/cadastrar.php">Cadastrar Conta</a>
+<a class="nav-link" href="/sistema-financeiro/pages/contas/cadastrar.php">Cadastrar Conta</a>
 </li>
 <?php } ?>
 <?php if ($perfil == "proprietario") { ?>
 <li class="nav-item">
-<a class="nav-link" href="contas/listar.php">Todas as Contas</a>
+<a class="nav-link" href="/sistema-financeiro/pages/contas/listar.php">Todas as Contas</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="users/listar.php">Usuários</a>
+<a class="nav-link" href="/sistema-financeiro/pages/users/listar.php">Usuários</a>
 </li>
 <?php } ?>
 <?php if ($perfil == "financeiro") { ?>
 <li class="nav-item">
-<a class="nav-link" href="contas/listar.php">Relatórios</a>
+<a class="nav-link" href="/sistema-financeiro/pages/contas/listar.php">Relatórios</a>
 </li>
 <?php } ?>
 <li class="nav-item">
-<a class="nav-link" href="../logout.php">Sair</a>
+<a class="nav-link" href="/sistema-financeiro/logout.php">Sair</a>
 </li>
 </ul>
 </div>
