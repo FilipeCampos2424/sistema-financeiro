@@ -53,12 +53,12 @@ include "../includes/menu.php";
 <?php
     elseif ($_SESSION["perfil"] == "financeiro"): ?>
     <P>Área Financeira</p>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
 
 <?php
     elseif ($_SESSION["perfil"] == "proprietario"): ?>
     <P>Área do administrador</p>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
     <?php endif; ?>
 
     <?php include "../includes/footer.php";  ?>
