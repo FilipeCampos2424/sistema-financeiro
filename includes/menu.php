@@ -23,7 +23,7 @@ $perfil = $_SESSION["perfil"];
 <?php } ?>
 <?php if ($perfil == "proprietario") { ?>
 <li class="nav-item">
-<a class="nav-link" href="/sistema-financeiro/pages/contas/listar.php">Todas as Contas</a>
+<a class="nav-link" href="/sistema-financeiro/pages/contas/listar_admin.php">Todas as Contas</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="/sistema-financeiro/pages/users/listar.php">Usuários</a>

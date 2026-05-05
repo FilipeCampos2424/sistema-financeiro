@@ -6,6 +6,11 @@ function listar_conta(): array {
     return db()->query($sql)->fetchAll();
 }
 
+function listar_usuarios(): array {
+    $sql = "SELECT * FROM usuario ORDER BY id_usuario ASC";
+    return db()->query($sql)->fetchAll();
+}
+
 function criar_conta(string $descricao, float $valor, string $tipo): int {
 $sql = "INSERT INTO contas (descricao, valor, tipo) VALUES (?,?,?)";
 $stmt = db()->prepare($sql);

@@ -28,10 +28,12 @@ $contas = listar_conta();
     </thead>
     <tbody>
         <?php foreach ($contas as $c): ?>
-        <?php if ($c['tipo'] === $perfil): ?>
             <tr>
                 <td><?= (int)$c['id_conta'] ?></td>
                 <td><?= htmlspecialchars($c['descricao']) ?></td>
+
+                <?php if ($perfil == "proprietario"):  ?>
+                <td><?= htmlspecialchars ($c['tipo']) ?></td>
 
                 <td><?= htmlspecialchars ($c['valor']) ?></td>
 
